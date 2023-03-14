@@ -18,6 +18,7 @@ ul {
     padding: 0;
     width: 300px;
     background-color: #f1f1f1;
+    border-radius: 5px;
   }
   
   li a {
@@ -28,11 +29,18 @@ ul {
     text-align: left;
     font-size: 25px;
     font-weight: bold;
+    border-radius: 5px;
   }
   
   li a:hover {
     background-color: #555;
     color: white;
+    border-radius: 5px;
+  }
+  li a:visited{
+    background-color: #dddddd;
+    color: #000;
+    border-radius: 5px;
   }
   .heading {
     display: flex;
@@ -77,10 +85,10 @@ ul {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
+    border-radius: 5px;
   }
   
    th {
-    border: 1px solid black;
     text-align: left;
     padding: 8px;
   }
@@ -89,7 +97,6 @@ ul {
     background-color: #dddddd;
   }
   td {
-    border: 1px solid black;
     text-align: center;
     padding: 8px;
   }
