@@ -18,6 +18,9 @@ body{
     padding:10px 15px;
     border-radius: 15px;
     width:30%;
+    animation-name: signin;
+    animation-duration: 1s;
+    animation-delay: 0s;
 }
 .heading{
     text-align: center;
@@ -28,7 +31,7 @@ body{
      padding:0px 10px;
     
 }
-.form input{
+.form .inf input{
     padding:0px 15px;
     border-radius: 10px;
     width:90%;
@@ -53,10 +56,50 @@ body{
 
 
 }
-
+.form .radio input{
+    width:30px;
+    
+}
 .form label {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     position: relative;
-    right: 70px;
+    right: 45px;
     margin: 0px 40px;
+}
+.form .inf input:hover{
+    transform: scale(1.2);
+    transition-duration: 1s;
+    transition-delay: 0s;
+}
+.form .radio input:hover{
+    transform:scale(1.4);
+    transition-duration: 1s;
+    transition-delay: 0s;
+}
+button:hover{
+    transform:scale(1.2);
+    transition-duration: 1s;
+    transition-delay: 0s;
+}
+@keyframes signin{
+       0%{
+           width:0px;
+       }
+      
+       100%{
+        width:30%;
+       }
+}
+@media (max-width:1150px)
+{
+    .content{
+        width:100%;
+    }
+}
+@media(max-width:350px)
+{
+    .form label{
+        position:relative;
+        right:10px;
+    }
 }
