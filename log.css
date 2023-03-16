@@ -1,0 +1,105 @@
+body{
+    background:url("light.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.body1{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.content{
+    font-family: 'League Spartan', sans-serif;
+    color:black;
+    background-color: white;
+    position:relative;
+    top:100px;
+    margin:10px 15px;
+    padding:10px 15px;
+    border-radius: 15px;
+    width:30%;
+    animation-name: signin;
+    animation-duration: 1s;
+    animation-delay: 0s;
+}
+.heading{
+    text-align: center;
+    font-size: 40px;
+}
+.form{
+     font-size: 20px;
+     padding:0px 10px;
+    
+}
+.form .inf input{
+    padding:0px 15px;
+    border-radius: 10px;
+    width:90%;
+    height:35px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid rgb(250, 49, 9);
+    background-color: rgb(211, 216, 212);
+    margin: 13px 0px;
+    border-radius: 20px;
+    font-size: 17px;
+    color: rgb(9, 14, 10);
+    cursor: pointer;
+    width: 100%;
+}
+.form .radio {
+    display: flex;
+
+    align-items: flex-start;
+    justify-content: center;
+
+
+}
+.form .radio input{
+    width:30px;
+    
+}
+.form label {
+    font-size: 1.4rem;
+    position: relative;
+    right: 45px;
+    margin: 0px 40px;
+}
+.form .inf input:hover{
+    transform: scale(1.2);
+    transition-duration: 1s;
+    transition-delay: 0s;
+}
+.form .radio input:hover{
+    transform:scale(1.4);
+    transition-duration: 1s;
+    transition-delay: 0s;
+}
+button:hover{
+    transform:scale(1.2);
+    transition-duration: 1s;
+    transition-delay: 0s;
+}
+@keyframes signin{
+       0%{
+           width:0px;
+       }
+      
+       100%{
+        width:30%;
+       }
+}
+@media (max-width:1150px)
+{
+    .content{
+        width:100%;
+    }
+}
+@media(max-width:350px)
+{
+    .form label{
+        position:relative;
+        right:10px;
+    }
+}

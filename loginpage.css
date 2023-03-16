@@ -23,6 +23,10 @@ body {
     background-size: cover;
     text-align: center;
     border-radius: 20px;
+    position:relative;
+    animation-name: aditya;
+    animation-duration: 3s;
+    animation-delay: 0s;
 }
 
 .form .h2 {
@@ -44,6 +48,10 @@ body {
     background-color: aliceblue;
     display: block;
     margin: auto;
+    position: relative;
+    animation-name: aditya1;
+    animation-duration: 3s;
+    animation-delay: 0s;
 
 
 }
@@ -88,7 +96,21 @@ body {
     cursor: pointer;
     width: 100%;
 }
-
+.form .in input:hover{
+    transform: scale(1.2);
+    transition-duration: 1s;
+    transition-delay: 0s;
+}
+.form .radio input:hover{
+    transform:scale(1.4);
+    transition-duration: 1s;
+    transition-delay: 0s;
+}
+button:hover{
+    transform:scale(1.2);
+    transition-duration: 1s;
+    transition-delay: 0s;
+}
 div {
     /* text-align: center; */
 
@@ -98,3 +120,50 @@ div.options {
     font-size: 30px;
 
 }
+@media (max-width:990px) and (min-width:877px)
+{
+    .form label{
+        position:relative;
+        left:30px;
+    }
+}
+@media(max-width:877px) 
+{
+    .content{
+        display : flex;
+        flex-wrap: wrap;
+        }
+    div.heading{
+        width:100%;
+        font-size: 100%;
+    }
+    div.form{
+        width:100%;
+        font-size: 100%;
+    }
+    .form label{
+        position:relative;
+        left:30px;
+    }
+}
+@keyframes  aditya {
+    0%{
+          top:0px;
+          right:70%;
+    }
+    100%{
+        top:0px;
+        right:0px;
+    }
+}
+@keyframes  aditya1 {
+    0%{
+          top:0px;
+          left:30%;
+    }
+    100%{
+        top:0px;
+        left:0px;
+    }
+}
+

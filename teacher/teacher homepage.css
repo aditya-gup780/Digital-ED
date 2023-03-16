@@ -3,15 +3,18 @@ h1 {
     font-size: 45px;
     margin-top: 10px;
 }
+
 h2 {
     color: gray;
     text-align: center;
     font-size: 35px;
 }
+
 img {
     height: 150px;
     width: 150px;
 }
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -19,9 +22,9 @@ ul {
     width: 300px;
     background-color: #f1f1f1;
     border-radius: 5px;
-  }
-  
-  li a {
+}
+
+li a {
     display: block;
     color: #000;
     padding: 12px 24px;
@@ -30,77 +33,87 @@ ul {
     font-size: 25px;
     font-weight: bold;
     border-radius: 5px;
-  }
-  
-  li a:hover {
+}
+
+li a:hover {
     background-color: #555;
     color: white;
     border-radius: 5px;
-  }
-  li a:visited{
+}
+
+li a:visited {
     background-color: #dddddd;
     color: #000;
     border-radius: 5px;
-  }
-  .heading {
+}
+
+.heading {
     display: flex;
     height: 175px;
     padding: auto;
     align-items: center;
-  }
-  .heading>.img {
-    background-color:white;
+}
+
+.heading>.img {
+    background-color: white;
     width: 150px;
     height: 150px;
     margin: 10px;
 
-  }
-  .heading>.name {
-    background-color:white;
+}
+
+.heading>.name {
+    background-color: white;
     width: 1500px;
     margin-left: 10px;
     text-align: center;
     padding-left: 10px;
-  }
-  .content {
+}
+
+.content {
     display: flex;
     align-items: center;
-  }
-  .content>.profile {
+}
+
+.content>.profile {
     text-align: center;
     font-weight: bold;
     background-color: white;
     width: auto;
     height: auto;
-    padding-left: 300px ;
-  }
-  .disclaimer{
+    padding-left: 300px;
+}
+
+.disclaimer {
     text-align: center;
     font-weight: bold;
     border: 1px gray;
-    background-color:gray;
+    background-color: gray;
     color: white;
-  }
-  table {
+}
+
+table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
     border-radius: 5px;
-  }
-  
-   th {
+}
+
+th {
     text-align: left;
     padding: 8px;
-  }
-  
-  tr:nth-child(even) {
+}
+
+tr:nth-child(even) {
     background-color: #dddddd;
-  }
-  td {
+}
+
+td {
     text-align: center;
     padding: 8px;
-  }
-  .logout {
+}
+
+.logout {
     text-align: right;
     color: #000;
-  }
+}
