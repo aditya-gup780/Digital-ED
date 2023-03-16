@@ -1,0 +1,62 @@
+body{
+    background:url("light.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.body1{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.content{
+    font-family: 'League Spartan', sans-serif;
+    color:black;
+    background-color: white;
+    position:relative;
+    top:100px;
+    margin:10px 15px;
+    padding:10px 15px;
+    border-radius: 15px;
+    width:30%;
+}
+.heading{
+    text-align: center;
+    font-size: 40px;
+}
+.form{
+     font-size: 20px;
+     padding:0px 10px;
+    
+}
+.form input{
+    padding:0px 15px;
+    border-radius: 10px;
+    width:90%;
+    height:35px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid rgb(250, 49, 9);
+    background-color: rgb(211, 216, 212);
+    margin: 13px 0px;
+    border-radius: 20px;
+    font-size: 17px;
+    color: rgb(9, 14, 10);
+    cursor: pointer;
+    width: 100%;
+}
+.form .radio {
+    display: flex;
+
+    align-items: flex-start;
+    justify-content: center;
+
+
+}
+
+.form label {
+    font-size: 1.2rem;
+    position: relative;
+    right: 70px;
+    margin: 0px 40px;
+}
