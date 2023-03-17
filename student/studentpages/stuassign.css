@@ -1,0 +1,64 @@
+.names .subjects{
+    list-style-type:none;
+}
+.content{
+    display:flex;
+    font-family: 'League Spartan', sans-serif;
+    
+  
+}
+body{
+    background-color: rgb(210, 209, 211);
+}
+.names{
+    width:23%;
+    margin:160px 20px;
+    padding:0px 15px;
+    background-color: darkgray;
+    border-radius: 12px;
+    height:300px;
+}
+.forum{
+    width:45%;
+    margin:70px 10px;
+    background-color: darkgray;
+    height:500px;
+    padding:50px 50px;
+
+}
+.Work {
+      margin:160px 6px;
+      width:25%;
+      background-color: darkgray;
+      border-radius: 10px;
+    
+}
+
+.Work h2,.names h2{
+     text-align: center;
+     font-weight: bold;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid rgb(245, 54, 20);
+    background-color: rgb(131, 132, 131);
+    margin: 13px 0px;
+    border-radius: 20px;
+    font-size: 17px;
+    color: rgb(9, 14, 10);
+    cursor: pointer;
+    width: 100%;
+}
+.para{
+    border:2px solid black;
+}
+.assignment{
+    height:40%;
+}
+.work{
+    height:64%;
+}
+.subjects{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 1.2rem;
+}

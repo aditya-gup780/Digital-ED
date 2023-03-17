@@ -33,7 +33,7 @@ ul {
   }
   
   li a:hover {
-    background-color: #555;
+    background-color: #696666;
     color: white;
     border-radius: 5px;
   }
@@ -65,6 +65,7 @@ ul {
   .content {
     display: flex;
     align-items: center;
+    font-family: 'League Spartan', sans-serif;
   }
   .content>.profile {
     text-align: center;
@@ -103,4 +104,22 @@ ul {
   .logout {
     text-align: right;
     color: #000;
+  }
+  ul>li:hover{
+      border-bottom: 2px solid black;
+  }
+  .profile{
+    font-family: 'League Spartan', sans-serif;
+  }
+  .btn{
+    padding: 6px 20px;
+    border: 2px solid rgb(250, 49, 9);
+    background-color: rgb(211, 216, 212);
+    margin: 13px 400px;
+    border-radius: 20px;
+    font-size: 17px;
+    color: rgb(9, 14, 10);
+    cursor: pointer;
+    width: 30%;
+    
   }
