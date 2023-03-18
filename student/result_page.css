@@ -25,3 +25,14 @@ table {
     color: #000;
 
   }
+  .btn{
+    padding: 6px 20px;
+    border: 2px solid rgb(250, 49, 9);
+    background-color: rgb(211, 216, 212);
+    margin: 13px 0px;
+    border-radius: 20px;
+    font-size: 17px;
+    color: rgb(9, 14, 10);
+    cursor: pointer;
+    width: 25%;
+  }
