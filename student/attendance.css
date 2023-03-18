@@ -1,0 +1,59 @@
+h1 {
+    color: gray;
+    font-size: 45px;
+    margin-top: 10px;
+}
+h2 {
+    color: gray;
+    text-align: center;
+    font-size: 35px;
+}
+img {
+    height: 150px;
+    width: 150px;
+}
+.heading {
+    display: flex;
+    height: 175px;
+    padding: auto;
+    align-items: center;
+  }
+.heading>.img {
+    background-color:white;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+
+  }
+  .heading>.name {
+    background-color:white;
+    width: 1500px;
+    margin-left: 10px;
+    text-align: center;
+    padding-left: 10px;
+  }
+  .disclaimer{
+    text-align: center;
+    font-weight: bold;
+    border: 1px gray;
+    background-color:gray;
+    color: white;
+  }
+  .courses {
+    display: flex;
+    height: 175px;
+    padding: auto;
+    align-items: center;
+  }
+  .courses>.course1{
+    background-color:aquamarine;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+  }
+  .courses>.course2{
+    background-color:antiquewhite;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+  }
