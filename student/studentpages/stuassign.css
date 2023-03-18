@@ -8,7 +8,7 @@
   
 }
 body{
-    background-color: rgb(210, 209, 211);
+    background-color: rgb(12, 12, 12);
 }
 .names{
     width:23%;
@@ -24,7 +24,8 @@ body{
     background-color: darkgray;
     height:500px;
     padding:50px 50px;
-
+ 
+    
 }
 .Work {
       margin:160px 6px;

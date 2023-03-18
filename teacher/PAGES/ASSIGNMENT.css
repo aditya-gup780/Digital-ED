@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(14, 12, 12);
+}
+.content{
+    display:flex;
+    font-family: 'League Spartan', sans-serif;
+    
+  
+}
+.classes{
+    width:23%;
+    margin:160px 20px;
+    padding:20px 15px;
+    background-color: darkgray;
+    border-radius: 12px;
+    height:300px;
+    font-size: 20px;
+    text-align: CENTER;
+}
+.assigngiven{
+    width:50%;
+    margin:70px 10px;
+    background-color: darkgray;
+    height:500px;
+    padding:50px 50px;
+    margin:40px 50px;
+    font-size: 50px;
+    border-radius: 12px;
+
+}
+.heading{
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+.content .assigngiven .assign{
+    height:30%;
+}
+.bar{
+    border:2px solid black;
+}
