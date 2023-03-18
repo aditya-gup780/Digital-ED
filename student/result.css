@@ -1,0 +1,43 @@
+.courses {
+    display: flex;
+    height: 175px;
+    padding: 20px;
+    align-items: center;
+    margin-left: 20px;
+    background-color: #555;
+   
+  }
+  .courses>.course1{
+    background-color: red;
+    width: 250px;
+    margin: 10px;
+    border: 12px solid black;
+    color:#555;
+    height:125px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  .courses>.course2{
+    background-color:purple;
+    width: 250px;
+    border: 12px solid black;
+    color: #555;
+    height: 125px;
+    text-align: center;
+  }
+  a {
+    display: block;
+    color: rgb(225, 214, 210);
+    padding: 25px 25px 25px 25px;
+    text-decoration: none;
+    text-align: left;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+  }
+  a:hover {
+    background-color: #555;
+    color: black;
+    border-radius: 5px;
+  }
