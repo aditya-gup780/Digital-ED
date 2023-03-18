@@ -7,14 +7,11 @@ function submitFun1(e) {
     e.preventDefault();
     var name = document.querySelector("#name").value;
     var number = document.querySelector("#number").value;
-    // var city = document.querySelector("#city").value;
-    // var rollNo = document.querySelector("#rollNo").value;
+    
 
     var studentObj = {
         name: name,
         number: number,
-        // city: city,
-        // rollNo: rollNo
     }
 
     studentDataArr.push(studentObj);
@@ -50,7 +47,7 @@ function displayFun(studentDataArr) {
             td4.innerHTML = "<button id='absent'>Absent</button>";
         
         });
-        td4.classList.add("td6");
+        td4.classList.add("td4");
         td4.append(btn1, btn2);
 
         tr.append(td1, td2, td3, td4);
