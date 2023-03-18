@@ -4,7 +4,7 @@
     padding: 20px;
     align-items: center;
     margin-left: 20px;
-    background-color: #555;
+    background-color: white;
    
   }
   .courses>.course1{
@@ -13,16 +13,15 @@
     margin: 10px;
     border: 12px solid black;
     color:#555;
-    height:125px;
+    height:auto;
     text-align: center;
-    border-radius: 5px;
   }
   .courses>.course2{
     background-color:purple;
     width: 250px;
     border: 12px solid black;
     color: #555;
-    height: 125px;
+    height: auto;
     text-align: center;
   }
   a {
@@ -33,11 +32,48 @@
     text-align: left;
     font-size: 25px;
     font-weight: bold;
-    border-radius: 5px;
     text-align: center;
   }
   a:hover {
-    background-color: #555;
+    background-color: white;
     color: black;
-    border-radius: 5px;
+    height: auto;
   }
+  h1 {
+    color: gray;
+    font-size: 45px;
+    margin-top: 10px;
+}
+h2 {
+    color: gray;
+    text-align: center;
+    font-size: 35px;
+}
+img {
+    height: 150px;
+    width: 150px;
+}
+.heading {
+  display: flex;
+  height: 175px;
+  padding: auto;
+  align-items: center;
+}
+.heading>.img {
+  background-color:white;
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+
+}
+.heading>.name {
+  background-color:white;
+  width: 1500px;
+  margin-left: 10px;
+  text-align: center;
+}
+.selection{
+  font-size:25px ;
+  font-weight: bold;
+  margin-left: 10px;
+}
