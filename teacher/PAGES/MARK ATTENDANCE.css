@@ -75,7 +75,7 @@ tr>th {
     outline: none;
 }
 
-.td6 {
+.td4 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -83,7 +83,7 @@ tr>th {
 
 }
 
-.td6>button {
+.td4>button {
     margin-right: 10px;
     color: white;
     border-radius: 5px;
@@ -92,11 +92,11 @@ tr>th {
     cursor: pointer;
 }
 
-.td6>button:nth-child(1) {
+.td4>button:nth-child(1) {
     background-color: green;
 }
 
-.td6>button:nth-child(2) {
+.td4>button:nth-child(2) {
     background-color: red;
 }
 
