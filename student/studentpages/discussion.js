@@ -1,4 +1,4 @@
-
+// localStorage.clear();
 var defaultTopics = [
     {
         id: 1,
