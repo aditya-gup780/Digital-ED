@@ -8,7 +8,10 @@
   
 }
 body{
-    background-color: rgb(12, 12, 12);
+    /* background-color: rgb(12, 12, 12); */
+    background: url("./quiz.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
 }
 .names{
     width:20%;
@@ -17,11 +20,13 @@ body{
     background-color: darkgray;
     border-radius: 12px;
     height:300px;
+    position:relative;
+    top:100px;
 }
 .forum{
     width:75%;
     margin:16px 10px;
-    background-color: darkgray;
+    /* background-color: darkgray; */
     height:500px;
     padding:50px 50px;
  
@@ -30,7 +35,7 @@ body{
 .Work {
       margin:160px 6px;
       width:25%;
-      background-color: darkgray;
+      /* background-color: darkgray; */
       border-radius: 10px;
     
 }
@@ -41,8 +46,8 @@ body{
 }
 .btn{
     padding: 6px 20px;
-    border: 2px solid rgb(245, 54, 20);
-    background-color: rgb(131, 132, 131);
+    border: 2px solid rgb(76, 10, 242);
+    background-color: rgb(243, 246, 243);
     margin: 13px 0px;
     border-radius: 20px;
     font-size: 17px;
@@ -101,4 +106,7 @@ button {
 }
 .comment-ts {
     padding-left: 10px;
+}
+.he{
+    color:white;
 }

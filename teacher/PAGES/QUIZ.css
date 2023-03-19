@@ -8,20 +8,24 @@
   
 }
 body{
-    background-color: rgb(12, 12, 12);
+    /* background-color: rgb(12, 12, 12);
+} */
+background: url("../../student/studentpages/quiz.jpg");
+background-repeat: no-repeat;
+background-size: cover;
 }
 .names{
     width:20%;
     margin:16px 20px;
     padding:0px 15px;
-    background-color: darkgray;
+    background-color: rgb(251, 247, 247);
     border-radius: 12px;
     height:300px;
 }
 .forum{
     width:75%;
     margin:16px 10px;
-    background-color: darkgray;
+    /* background-color: darkgray; */
     height:500px;
     padding:50px 50px;
  
@@ -30,7 +34,7 @@ body{
 .Work {
       margin:160px 6px;
       width:25%;
-      background-color: darkgray;
+      /* background-color: darkgray; */
       border-radius: 10px;
     
 }
@@ -41,14 +45,16 @@ body{
 }
 .btn{
     padding: 6px 20px;
-    border: 2px solid rgb(245, 54, 20);
-    background-color: rgb(131, 132, 131);
+    border: 2px solid rgb(95, 20, 245);
+    background-color: rgb(248, 249, 248);
     margin: 13px 0px;
     border-radius: 20px;
     font-size: 17px;
     color: rgb(9, 14, 10);
     cursor: pointer;
     width: 25%;
+    position:relative;
+    bottom:100px;
 }
 .para{
     border:2px solid black;
