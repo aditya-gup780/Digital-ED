@@ -1,0 +1,51 @@
+body {
+    margin: 10px 30px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+h1, h4, ol {
+    margin: 0;
+}
+p {
+    margin: 5px 0;
+}
+.top-bar {
+    display: inline-block;
+    background-color: skyblue;
+    padding: 0 40px;
+    line-height: 50px;
+}
+.main {
+    background-color: #F6F6EF;
+    padding: 10px 15px;
+}
+.row {
+    padding: 5px 0;
+}
+.timestamp {
+    padding-right: 10px;
+}
+textarea {
+    width: 80%;
+    height: 80px;
+}
+button {
+    display: block;
+    margin: 10px 0;
+}
+.comments {
+    margin: 40px 0;
+}
+.comment {
+    margin: 10px 0;
+}
+.bottom, .top-comment {
+    display: flex;
+    color: grey;
+    font-size: 12px;
+}
+.comment-ts {
+    padding-left: 10px;
+}

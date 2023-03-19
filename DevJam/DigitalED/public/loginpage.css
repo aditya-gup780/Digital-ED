@@ -1,0 +1,169 @@
+div.heading {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'League Spartan', sans-serif;
+    padding: 20px 40px;
+    margin: 20px 18px;
+    color: white;
+}
+
+body {
+    background-color: rgb(246, 239, 239);
+
+}
+
+.content {
+    display: flex;
+}
+
+.heading {
+    width: 70%;
+    background: url("./light.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    border-radius: 20px;
+    position:relative;
+    animation-name: aditya;
+    animation-duration: 3s;
+    animation-delay: 0s;
+}
+
+.form .h2 {
+    font-size: 2.3rem;
+    /* text-align: center; */
+}
+
+.form .signin {
+    opacity: 50%;
+}
+
+.form {
+
+    width: 30%;
+    border: 2px solid black;
+    padding: 40px 42px;
+    margin: 30px;
+    font-family: 'Baloo 2', cursive;
+    background-color: aliceblue;
+    display: block;
+    margin: auto;
+    position: relative;
+    animation-name: aditya1;
+    animation-duration: 3s;
+    animation-delay: 0s;
+
+
+}
+
+.he {
+    font-size: 4rem;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.form .in input {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 15px;
+}
+
+.form .radio {
+    display: flex;
+
+    align-items: flex-start;
+    justify-content: center;
+
+
+}
+
+.form label {
+    font-size: 1.2rem;
+    position: relative;
+    right: 70px;
+    margin: 0px 40px;
+
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid rgb(250, 49, 9);
+    background-color: rgb(211, 216, 212);
+    margin: 13px 0px;
+    border-radius: 20px;
+    font-size: 17px;
+    color: rgb(9, 14, 10);
+    cursor: pointer;
+    width: 100%;
+}
+.form .in input:hover{
+    transform: scale(1.2);
+    transition-duration: 1s;
+    transition-delay: 0s;
+}
+.form .radio input:hover{
+    transform:scale(1.4);
+    transition-duration: 1s;
+    transition-delay: 0s;
+}
+button:hover{
+    transform:scale(1.2);
+    transition-duration: 1s;
+    transition-delay: 0s;
+}
+div {
+    /* text-align: center; */
+
+}
+
+div.options {
+    font-size: 30px;
+
+}
+@media (max-width:990px) and (min-width:877px)
+{
+    .form label{
+        position:relative;
+        left:30px;
+    }
+}
+@media(max-width:877px) 
+{
+    .content{
+        display : flex;
+        flex-wrap: wrap;
+        }
+    div.heading{
+        width:100%;
+        font-size: 100%;
+    }
+    div.form{
+        width:100%;
+        font-size: 100%;
+    }
+    .form label{
+        position:relative;
+        left:30px;
+    }
+}
+@keyframes  aditya {
+    0%{
+          top:0px;
+          right:70%;
+    }
+    100%{
+        top:0px;
+        right:0px;
+    }
+}
+@keyframes  aditya1 {
+    0%{
+          top:0px;
+          left:30%;
+    }
+    100%{
+        top:0px;
+        left:0px;
+    }
+}
+

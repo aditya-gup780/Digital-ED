@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT PROFILE</title>
+    <link rel="stylesheet" href="./student_profile_css.css">
+</head>
+<body>
+<div class="heading">
+    <div class="img">
+        <img src="http://www.mnnit.ac.in/institutelogo/MNNIT%20Logo%20New.jpg" alt="MNNIT LOGO">
+    </div>
+    <div class="name">
+    <h1>  
+        MOTILAL NEHRU NATIONAL INSTITUTE OF TECHNOLOGY
+    </h1>
+    <h2>
+        ALLAHABAD, Estd. 1961
+    </h2>
+    </div>
+</div>
+<hr>
+<br>
+<div class="disclaimer">
+"DISCLAIMER"
+</div>
+<br>
+<div class="content">
+    <div class="navigation_bar">
+    <ul>
+        <li><a href="/PROFILE">PROFILE</a></li>
+        <li><a href="/att">ATTENDANCE</a></li>
+        <li><a href="http://localhost:8081/Result">RESULT</a></li>
+        <li><a href="/Diss">DISCUSSION</a></li>
+        <li><a href="/Quiz">QUIZ</a></li>
+    </ul>
+    </div>
+    <div class="profile">
+        <table>
+            <%
+            if(userData.length!=0){
+            var i=1;
+            userData.forEach(function(data){
+            %>
+            <tr>
+                <th>PICTURE</th>
+                <td><img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="PROFILE PICTURE"></td>
+            </tr>
+            <tr>
+                <th>NAME</th>
+                <td name="name"><%=data.name%></data></td>
+            </tr>
+            <tr>
+                <th>GENDER</th>
+                <td name="gender"><%=data.gender%></td>
+            </tr>
+            <tr>
+                <th>DOB</th>
+                <td name="dob"><%=data.dob%></td>
+            </tr>
+            <tr>
+                <th>REGISTRATION NUMBER</th>
+                <td name="reg_no"><%=data.reg_no%></td>
+            </tr>
+            <tr>
+                <th>BRANCH</th>
+                <td name="branch"><%=data.branch%></td>
+            </tr>
+            <tr>
+                <th>SEMESTER</th>
+                <td name="sem"><%=data.sem%></td>
+            </tr>
+            <%  i++; }) %>
+            <% } %>
+
+        </table>
+
+
+    </div>
+</div> 
+<div class="logout">
+<a href="/Login">LOGOUT</a> 
+</div> 
+</body>
+</html>

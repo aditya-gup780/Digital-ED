@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/discussion.css">
+</head>
+<body>
+    <div class="top-bar">
+        <h1>
+            Discussion Forum
+        </h1>
+    </div>
+    <div class="main">
+        <div class="header">
+        </div>
+        <textarea></textarea>
+        <button>add comment</button>
+        <div class="comments">
+        </div>
+    </div>
+    <script src="./js/discussion.js"></script>
+    <script>
+        <!-- localStorage.clear(); -->
+        var id = window.location.search.slice(1);
+        var topic = topics.find(t => t.id == id);
+        var header = document.querySelector('.header');
+        var headerHtml = `
+            <h4 class="title">
+                ${topic.title}
+            </h4>
+            <div class="bottom">
+                <p class="timestamp">
+                    ${new Date(topic.date).toLocaleString()}
+                </p>
+                <p class="comment-count">
+                    ${topic.comments.length} comments
+                </p>
+            </div>
+        `
+        header.insertAdjacentHTML('beforeend', headerHtml)
+
+        function addComment(comment) {
+            var commentHtml = `
+                <div class="comment">
+                    <div class="top-comment">
+                        <p class="user">
+                            ${comment.author}
+                        </p>
+                        <p class="comment-ts">
+                            ${new Date(comment.date).toLocaleString()}
+                        </p>
+                    </div>
+                    <div class="comment-content">
+                        ${comment.content}
+                    </div>
+                </div>
+            `
+            comments.insertAdjacentHTML('beforeend', commentHtml);
+        }
+
+        var comments = document.querySelector('.comments');
+        for (let comment of topic.comments) {
+            addComment(comment);
+        }
+
+        var btn = document.querySelector('button');
+        btn.addEventListener('click', function() {
+            var txt = document.querySelector('textarea');
+            var comment = {
+                content: txt.value,
+                date: Date.now(),
+                author: 'Student'
+            }
+            addComment(comment);
+            txt.value = '';
+            topic.comments.push(comment);
+            localStorage.setItem('topics', JSON.stringify(topics));
+        })
+    </script>
+</body>
+</html>

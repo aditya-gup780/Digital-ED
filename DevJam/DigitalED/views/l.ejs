@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="result_page.css">
+</head>
+<body>
+    <table>
+        <%
+        if(userData.length!=0){
+        var i=1;
+        userData.forEach(function(data){
+        %>
+        <tr>
+            <th>
+                COURSE CODE
+            </th>
+            <td>
+                <%=data.cc%>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                COURSE NAME
+            </th>
+            <td>
+                <%=data.cn%>
+            </td>
+        </tr><tr>
+            <th>
+                TOTAL MARKS
+            </th>
+            <td>
+                <%=data.tm%>
+            </td>
+        </tr><tr>
+            <th>
+                MARKS OBTAINED
+            </th>
+            <td>
+                <%=data.mo%>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                MAXIMUM MARKS IN CLASS
+            </th>
+            <td>
+                <%=data.mm%>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                CPI
+            </th>
+            <td>
+                <%=data.cpi%>
+            </td>
+        </tr><tr>
+            <th>
+                RESULT
+            </th>
+            <td>
+                <%=data.result%>
+            </td>
+        </tr>
+        <%  i++; }) %>
+        <% } %>
+    </table>
+<div class="back">
+    <a href="http://localhost:8081/Profile">BACK TO PROFILE PAGE</a>
+</div>
+
+
+
+</body>
+</html>

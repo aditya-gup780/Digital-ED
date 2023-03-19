@@ -1,0 +1,112 @@
+.names .subjects{
+    list-style-type:none;
+}
+.content{
+    display:flex;
+    font-family: 'League Spartan', sans-serif;
+    
+  
+}
+body{
+    /* background-color: rgb(12, 12, 12); */
+    background: url("./quiz.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+.names{
+    width:20%;
+    margin:16px 20px;
+    padding:0px 15px;
+    background-color: darkgray;
+    border-radius: 12px;
+    height:300px;
+    position:relative;
+    top:100px;
+}
+.forum{
+    width:75%;
+    margin:16px 10px;
+    /* background-color: darkgray; */
+    height:500px;
+    padding:50px 50px;
+ 
+    
+}
+.Work {
+      margin:160px 6px;
+      width:25%;
+      /* background-color: darkgray; */
+      border-radius: 10px;
+    
+}
+
+.Work h2,.names h2{
+     text-align: center;
+     font-weight: bold;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid rgb(76, 10, 242);
+    background-color: rgb(243, 246, 243);
+    margin: 13px 0px;
+    border-radius: 20px;
+    font-size: 17px;
+    color: rgb(9, 14, 10);
+    cursor: pointer;
+    width: 25%;
+}
+.para{
+    border:2px solid black;
+}
+.assignment{
+    height:40%;
+}
+.work{
+    height:64%;
+}
+.subjects{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 1.2rem;
+}
+.heading{
+    color:rgb(243, 243, 243);
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    
+}
+.main {
+    background-color: #F6F6EF;
+    padding: 10px 15px;
+}
+.row {
+    padding: 5px 0;
+}
+.timestamp {
+    padding-right: 10px;
+}
+textarea {
+    width: 80%;
+    height: 80px;
+}
+button {
+    display: block;
+    margin: 10px 0;
+}
+.comments {
+    margin: 40px 0;
+}
+.comment {
+    margin: 10px 0;
+}
+.bottom, .top-comment {
+    display: flex;
+    color: grey;
+    font-size: 12px;
+}
+.comment-ts {
+    padding-left: 10px;
+}
+.he{
+    color:white;
+}

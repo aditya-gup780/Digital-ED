@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./upload_result.css">
+</head>
+<body>
+    <div class="main">
+        UPLOAD STUDENT MARKS
+    </div>
+    <div class="marks">
+<table>
+    <form action="http://localhost.8081/Upload_Result" method="post">
+    <%
+            if(userData.length!=0){
+            var i=1;
+            userData.forEach(function(data){
+            %>
+    <tr>
+        <th>STUDENT NAME</th>
+        <th>REGISTRATION NUMBER</th>
+        <th>MARKS OBTAINED</th>
+    </tr>
+    <tr>
+        <td>
+            <%=data.name%>
+        </td>
+        <td name="reg_no">
+            <%=data.reg_no%>
+        </td>
+        <td>
+            
+            <input type="number" name="mo">
+        </td>
+    </tr>
+    <%  i++; }) %>
+            <% } %>
+    </form>
+</table>
+</div>
+<input type="submit" value="Submit">
+</body>
+</html>

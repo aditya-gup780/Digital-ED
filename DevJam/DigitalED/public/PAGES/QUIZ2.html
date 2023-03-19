@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="./QUIZ.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bree+Serif&family=League+Spartan:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+</head>
+</head>
+
+<body>
+    <h2 class="heading">QUIZZES ALLOTED </h2>
+    <div class="content">
+        <div class="names">
+            <h2 class="heading1">NAME OF GROUPS</h2>
+            <br>
+            <ul class="subjects">
+                <li>GROUP N1</li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="forum">
+            Quizzes Given
+            <br>
+            <div class="main">
+                <div class="header">
+                </div>
+                <textarea></textarea>
+                <button>add comment</button>
+                <div class="comments">
+                </div>
+            </div>
+
+        </div>
+        
+        <script src="./quiz.js"></script>
+        <script>
+            <!-- localStorage.clear(); -->
+            
+    
+            var id = window.location.search.slice(1);
+            var thread = threads.find(t => t.id == id);
+            var header = document.querySelector('.header');
+            var headerHtml = `
+                <h4 class="title">
+                    ${thread.title}
+                </h4>
+                <div class="bottom">
+                    <!-- <p class="timestamp">
+                        ${new Date(thread.date).toLocaleString()}
+                    </p> -->
+                    <p class="comment-count">
+                        ${thread.comments.length} comments
+                    </p>
+                </div>
+            `
+            header.insertAdjacentHTML('beforeend', headerHtml)
+    
+            function addComment(comment) {
+                var commentHtml = `
+                    <div class="comment">
+                        <div class="top-comment">
+                            <p class="user">
+                                ${comment.author}
+                            </p>
+                            <!-- <p class="comment-ts">
+                                ${new Date(comment.date).toLocaleString()}
+                            </p> -->
+                        </div>
+                        <div class="comment-content">
+                            ${comment.content}
+                        </div>
+                    </div>
+                `
+                comments.insertAdjacentHTML('beforeend', commentHtml);
+            }
+    
+            var comments = document.querySelector('.comments');
+            for (let comment of thread.comments) {
+                addComment(comment);
+            }
+    
+            var btn = document.querySelector('button');
+            btn.addEventListener('click', function() {
+                var txt = document.querySelector('textarea');
+                var comment = {
+                    content: txt.value,
+                    author: 'Teacher'
+                }
+                addComment(comment);
+                txt.value = '';
+                thread.comments.push(comment);
+                localStorage.setItem('threads', JSON.stringify(threads));
+            })
+        </script>
+
+    </div>
+    <a href="/Teacher"><button class="btn">BACK TO PROFILE PAGE</button></a>
+</body>
+
+</html>
