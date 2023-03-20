@@ -31,13 +31,9 @@ app.post('/',(req,res) => {
     con.connect(function(err){
         if (err) throw err;
         console.log("Connected");
-        var sql = "INSERT INTO Student(name,reg_no,email,password,profession,dob) VALUES ?";
-        var sql2 = "INSERT INTO result(name,reg_no,email) VALUES ?";
+        var sql = "INSERT INTO Student(name,reg_no,email,password,profession,dob,gender,branch,sem) VALUES ?";
         var values = [
-            [req.body.name, req.body.reg_no, req.body.email, req.body.password, req.body.profession, req.body.date]
-        ]
-        var values2 = [
-            [req.body.name,req.body.reg_no,req.body.email]
+            [req.body.name, req.body.reg_no, req.body.email, req.body.password, req.body.profession, req.body.date, req.body.gender, req.body.branch, req.body.sem]
         ]
         con.query(sql,[values], function(err,result){
             if (err) throw err;
@@ -88,11 +84,14 @@ app.get('/Upload_Result',(req,res) => {
     con.query("SELECT * FROM result",function(err,result){
         if (err) throw err;
         console.log("Getting data");
+        result.forEach(function(data){
+            req.session.a = data.reg_no;
+            })
         res.render('result',{userData:result});
     })
 });
 app.post('/Upload_Result',(req,res)=>{
-    con.query("UPDATE result SET mo = ? WHERE reg_no=?",[req.body.mo,req.body.reg_no],function(err,result){
+    con.query("UPDATE result SET mo = ? WHERE reg_no=?",[req.body.mo,req.session.a],function(){
         console.log('Updated');
     })
 })
@@ -105,10 +104,10 @@ app.get('/Diss',(req,res)=>{
 app.get('/Diss2',(req,res)=>{
     res.sendFile('discussion2.html',{root:'public/studentpages'});
 })
-app.get('/DISS',(req,res)=>{
+app.get('/DISS3',(req,res)=>{
     res.sendFile('DISCUSSION.html',{root:'public/PAGES'});
 })
-app.get('/DISS2',(req,res)=>{
+app.get('/DISS4',(req,res)=>{
     res.sendFile('discussion2.html',{root:'public/PAGES'});
 })
 app.get('/Quiz',(req,res)=>{

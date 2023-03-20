@@ -12,7 +12,6 @@ function submitFun1(e) {
     var studentObj = {
         name: name,
         number: number,
-        stat: stat
         // city: city,
         // rollNo: rollNo
     }
@@ -40,7 +39,6 @@ function displayFun(studentDataArr) {
         td3.innerHTML = item.number;
         var td4 = document.createElement("td");
         var btn1 = document.createElement("button");
-        btn1.innerHTML = item.stat;
         btn1.innerHTML = "P";
         btn1.addEventListener("click", function () {
             td4.innerHTML = "<button id='present' name='stat' value='present'>Present</button>";

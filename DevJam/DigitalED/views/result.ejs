@@ -11,9 +11,9 @@
     <div class="main">
         UPLOAD STUDENT MARKS
     </div>
+    <form action="/Upload_Result" method="post">
     <div class="marks">
 <table>
-    <form action="http://localhost.8081/Upload_Result" method="post">
     <%
             if(userData.length!=0){
             var i=1;
@@ -33,14 +33,14 @@
         </td>
         <td>
             
-            <input type="number" name="mo">
+            <input type="number" name="mo" value="<%=data.mo%>">
         </td>
     </tr>
     <%  i++; }) %>
             <% } %>
-    </form>
 </table>
 </div>
-<input type="submit" value="Submit">
+<a href="/Teacher"><input type="submit" value="Submit"></a>
+</form>
 </body>
 </html>
