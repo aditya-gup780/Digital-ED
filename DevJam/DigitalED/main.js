@@ -117,17 +117,20 @@ app.get('/Quiz',(req,res)=>{
 app.get('/Quiz2',(req,res)=>{
     res.sendFile('QUIZ2.html',{root:'public/studentpages'});
 })
-app.get('/QUIZ',(req,res)=>{
-    res.sendFile('QUIZ.html',{root:'public/PAGES'});
+app.get('/QUIZ3',(req,res)=>{
+    res.sendFile('QUIZ3.html',{root:'public/PAGES'});
 })
-app.get('/QUIZ2',(req,res)=>{
-    res.sendFile('QUIZ2.html',{root:'public/PAGES'});
+app.get('/QUIZ4',(req,res)=>{
+    res.sendFile('QUIZ4.html',{root:'public/PAGES'});
 })
 app.get('/att',(req,res)=>{
     res.sendFile('attendance.html',{root:'public'});
 })
 app.get('/cal',(req,res)=>{
     res.sendFile('calender.html',{root:'public'});
+})
+app.get('/Assignment',(req,res)=>{
+    res.sendFile('assignment.html',{root:'public/studentpages'});
 })
 app.listen(8081,function(){
     console.log('running');

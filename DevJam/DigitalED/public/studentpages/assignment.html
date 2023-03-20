@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discussion</title>
-    <link rel="stylesheet" href="./discussion.css">
+    <link rel="stylesheet" href="./css/discussion.css">
 </head>
 
 <body>
     <div class="top-bar">
         <h1>
-            Discussion Forum
+            ASSIGNMENT
         </h1>
 
     </div>
@@ -20,8 +20,9 @@
         <ol>
         </ol>
     </div>
-    <script src="./discussion.js"></script>
+    <script src="./js/discussion.js"></script>
     <script>
+        <!-- localStorage.clear(); -->
         
 
         console.log(topics);
@@ -29,7 +30,7 @@
         for (let topic of topics) {
             var html = `
         <li class="row">
-            <a href="/DISS2?${topic.id}">
+            <a href="/Diss2?${topic.id}">
                 <h4 class="title">
                     ${topic.title}
                 </h4>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="./css2/QUIZ.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bree+Serif&family=League+Spartan:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+</head>
+</head>
+
+<body>
+    <h2 class="heading">QUIZZES ALLOTED </h2>
+    <div class="content">
+        <div class="names">
+            <h2 class="heading1">NAME OF GROUPS</h2>
+            <br>
+            <ul class="subjects">
+                <li>GROUP N1</li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="forum">
+            
+            <br>
+
+            
+            <div class="main">
+                <ol>
+                    
+                </ol>
+            </div>
+            <script src="./js2/quiz.js"></script>
+            
+            <div class="assignment"></div>
+        </div>
+        <script>
+            <!-- localStorage.clear(); -->
+        
+
+            console.log(threads);
+            var container = document.querySelector('ol');
+            for (let thread of threads) {
+                var html = `
+            <li class="row">
+                <a href="QUIZ4?${thread.id}">
+                    <h4 class="title">
+                        ${thread.title}
+                    </h4>
+
+
+
+                    <!-- <div class="bottom">
+                        <p class="timestamp">
+                            ${new Date(thread.date).toLocaleString()}
+                        </p>
+                        <p class="comment-count">
+                            ${thread.comments.length} comments
+                        </p>
+                    </div> -->
+
+
+                </a>
+            </li>
+            `
+                container.insertAdjacentHTML('beforeend', html);
+            }
+        </script>
+
+    </div>
+    <a href="/Teacher"><button class="btn">BACK TO PROFILE PAGE</button></a>
+</body>
+
+</html>

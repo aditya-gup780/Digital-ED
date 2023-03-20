@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./discussion.css">
+    <link rel="stylesheet" href="./css/discussion.css">
 </head>
 <body>
     <div class="top-bar">
@@ -17,14 +17,13 @@
         <div class="header">
         </div>
         <textarea></textarea>
-        <button>add comment</button>
+        <button>add file</button>
         <div class="comments">
         </div>
     </div>
-    <script src="./discussion.js"></script>
+    <script src="./js/assignment.js"></script>
     <script>
-        
-
+        <!-- localStorage.clear(); -->
         var id = window.location.search.slice(1);
         var topic = topics.find(t => t.id == id);
         var header = document.querySelector('.header');
@@ -73,7 +72,7 @@
             var comment = {
                 content: txt.value,
                 date: Date.now(),
-                author: 'Teacher'
+                author: 'Student'
             }
             addComment(comment);
             txt.value = '';
